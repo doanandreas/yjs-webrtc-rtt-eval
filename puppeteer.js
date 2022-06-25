@@ -4,7 +4,6 @@ const puppeteer = require("puppeteer");
 const shortUUID = require("short-uuid");
 const generator = shortUUID();
 
-require("dotenv").config();
 const { TRIAL_NUMBER, PEER_NUMBER } = process.env;
 
 const mysql = require("mysql");
