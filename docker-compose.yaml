@@ -1,0 +1,9 @@
+version: "3"
+services:
+  puppeteer:
+    build: .
+    volumes:
+      - /app/node_modules
+      - type: bind
+        source: ./result.txt
+        target: /app/result.txt
